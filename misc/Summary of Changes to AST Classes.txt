@@ -1,0 +1,5 @@
+1. Added NullLiteral AST class and corresponding method "public ResultType visitNullLiteral(NullLiteral nullLiteral, ArgType arg);" to the Visitor interface.
+2. Modified the AST Displayer to implement the newly added method in the Visitor interface.
+3. Added "Typedenoter type;" field to the AST class
+4. Added implementations of toString method in the implementations of TypeDenoter.
+5. Added implementation of "equals" method for the TypeDenoter class.

@@ -1,0 +1,13 @@
+Scope of the project:
+1. The project successfully implements all features of PA1 through PA4. It does not implement any optional parts.
+
+Changes to AST classes:
+For type checking:
+1. Added NullLiteral AST class and corresponding method "public ResultType visitNullLiteral(NullLiteral nullLiteral, ArgType arg);" to the Visitor interface.
+2. Modified the AST Displayer to implement the newly added method in the Visitor interface.
+3. Added "Typedenoter type;" field to the AST class
+4. Added implementations of toString method in the implementations of TypeDenoter.
+5. Added implementation of "equals" method for the TypeDenoter class.
+For code generation:
+6. Added "RuntimeDescription runtimeDescription;" field to Declaration class. RuntimeDescription is a class in the CodeGenerator package. Instances of RuntimeDescription are attatched to declarations and keep track of the variable's size and location in memory.
+7.
